@@ -1,0 +1,27 @@
+\documentclass{article}
+\usepackage{amsmath, amsfonts}
+\title{Diffie-Hellman key protocol example}
+\author{}
+
+\begin{document}
+    \maketitle
+
+    \begin{align}
+        \intertext{This is all public information:}
+            p &= 37 \\
+            & \mathbb{Z}_p \\
+            \overline{g} &= \overline{3}
+        \intertext{Person A:}
+            \overline{a} &= \overline{51} \\
+            \overline{A} &= \overline{g} ^ a
+        \intertext{Person A now shares $A$ with Person B and keeps $a$ private.}
+        \intertext{Person B:}
+            \overline{b} &= \overline{14} \\
+            \overline{B} &= \overline{g} ^ b
+        \intertext{Person B now shares $B$ with person A and keeps $b$ private.}
+        \intertext{Person A:}
+            \overline{key} &= \overline{B} ^ a
+        \intertext{Person B:}
+            \overline{key} &= \overline{A} ^ b
+    \end{align}
+\end{document}

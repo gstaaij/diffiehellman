@@ -1,0 +1,11 @@
+
+build
+versions
+
+.vscode
+
+diffiehellmanexample.*
+!diffiehellmanexample.tex
+!diffiehellmanexample.pdf
+
+diffiehellmantest.txt
