@@ -29,7 +29,7 @@
 #define NOB_IMPLEMENTATION
 #include "nob.h"
 
-#define PROGRAM_VERSION "1.0.0-rc"
+#define PROGRAM_VERSION "1.0.0"
 
 // I'm too lazy to type "unsigned long long" every time
 typedef unsigned long long uintll_t;
