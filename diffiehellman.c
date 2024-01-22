@@ -29,6 +29,8 @@
 #define NOB_IMPLEMENTATION
 #include "nob.h"
 
+#define PROGRAM_VERSION "1.0.0-rc"
+
 // I'm too lazy to type "unsigned long long" every time
 typedef unsigned long long uintll_t;
 
@@ -109,6 +111,11 @@ Nob_String_Builder decodestring(char* strin, const uintll_t secret) {
 }
 
 int main(void) {
+    printf("\n");
+    printf("Diffie-Hellman key protocol encoding program thing\nVersion "PROGRAM_VERSION"\n");
+    printf("Copyright (c) 2024 gstaaij\n");
+    printf("\n\n");
+
     // Preallocate some char buffers for the input
     char pch[128] = {0};
     char gch[128] = {0};
